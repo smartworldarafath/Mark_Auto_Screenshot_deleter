@@ -1,0 +1,1076 @@
+PATH: D:\App Data\Cline\recovery\xapk-extracted\apktool-out\smali\com\markOne\ss_app\app\ui\activities\MainComposeActivity.smali
+SIZE: 27515 LINES: 1073
+
+.class public final Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;
+.super Lc/l;
+.source "SourceFile"
+
+# interfaces
+.implements La7/b;
+
+
+# static fields
+.field public static final synthetic W:I
+
+
+# instance fields
+.field public N:LE2/f;
+
+.field public volatile O:LY6/b;
+
+.field public final P:Ljava/lang/Object;
+
+.field public Q:Z
+
+.field public R:Lo6/j;
+
+.field public S:LO6/a;
+
+.field public T:Ln6/k;
+
+.field public U:Ln6/e;
+
+.field public V:Ln6/b;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    invoke-direct {p0}, Lc/l;-><init>()V
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->P:Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->Q:Z
+
+    new-instance v0, Lr6/d;
+
+    invoke-direct {v0, p0}, Lr6/d;-><init>(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;)V
+
+    iget-object v1, p0, Lc/l;->u:Lm4/i;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iget-object v2, v1, Lm4/i;->u:Ljava/lang/Object;
+
+    check-cast v2, Lc/l;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v0, v2}, Lr6/d;->a(Lc/l;)V
+
+    :cond_0
+    iget-object v1, v1, Lm4/i;->t:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/concurrent/CopyOnWriteArraySet;
+
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final attachBaseContext(Landroid/content/Context;)V
+    .locals 1
+
+    const-string v0, "newBase"
+
+    invoke-static {p1, v0}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :try_start_0
+    invoke-static {p1}, LF4/D;->b(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-super {p0, v0}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    invoke-super {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
+
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string v0, "Exception in attachBaseContext "
+
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v0, Ld7/z;->a:Ld7/z;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "message"
+
+    invoke-static {p1, v0}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final b()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->m()LY6/b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, LY6/b;->b()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final c()Landroidx/lifecycle/c0;
+    .locals 5
+
+    invoke-super {p0}, Lc/l;->c()Landroidx/lifecycle/c0;
+
+    move-result-object v0
+
+    const-class v1, LX6/a;
+
+    invoke-static {p0, v1}, LF4/f0;->a(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, LX6/a;
+
+    check-cast v1, Lh6/b;
+
+    invoke-virtual {v1}, Lh6/b;->a()Lb7/b;
+
+    move-result-object v2
+
+    new-instance v3, LR/p;
+
+    iget-object v4, v1, Lh6/b;->a:Lh6/g;
+
+    iget-object v1, v1, Lh6/b;->b:Lh6/d;
+
+    invoke-direct {v3, v4, v1}, LR/p;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    new-instance v1, LX6/f;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-direct {v1, v2, v0, v3}, LX6/f;-><init>(Lb7/b;Landroidx/lifecycle/c0;LR/p;)V
+
+    return-object v1
+.end method
+
+.method public final m()LY6/b;
+    .locals 3
+
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->O:LY6/b;
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->P:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    iget-object v1, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->O:LY6/b;
+
+    if-nez v1, :cond_0
+
+    new-instance v1, LY6/b;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p0, v2}, LY6/b;-><init>(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;I)V
+
+    iput-object v1, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->O:LY6/b;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    monitor-exit v0
+
+    goto :goto_2
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+
+    :cond_1
+    :goto_2
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->O:LY6/b;
+
+    return-object v0
+.end method
+
+.method public final n()LO6/a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->S:LO6/a;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "commonStateHolder"
+
+    invoke-static {v0}, Ls7/j;->k(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final o(Landroid/os/Bundle;)V
+    .locals 2
+
+    invoke-super {p0, p1}, Lc/l;->onCreate(Landroid/os/Bundle;)V
+
+    invoke-virtual {p0}, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->m()LY6/b;
+
+    move-result-object p1
+
+    iget-object p1, p1, LY6/b;->w:La7/b;
+
+    check-cast p1, LY6/b;
+
+    iget-object v0, p1, LY6/b;->u:Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;
+
+    iget-object p1, p1, LY6/b;->w:La7/b;
+
+    check-cast p1, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;
+
+    invoke-static {v0, p1}, LY6/b;->c(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;)Landroidx/lifecycle/e0;
+
+    move-result-object p1
+
+    const-class v0, LY6/d;
+
+    invoke-static {v0}, Ls7/v;->a(Ljava/lang/Class;)Ls7/e;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroidx/lifecycle/e0;->a(Ls7/e;)Landroidx/lifecycle/a0;
+
+    move-result-object p1
+
+    check-cast p1, LY6/d;
+
+    iget-object p1, p1, LY6/d;->c:LE2/f;
+
+    iput-object p1, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->N:LE2/f;
+
+    iget-object v0, p1, LE2/f;->u:Ljava/lang/Object;
+
+    check-cast v0, LY1/d;
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p0}, Lc/l;->d()LY1/c;
+
+    move-result-object v0
+
+    iget-boolean v1, p1, LE2/f;->t:Z
+
+    if-eqz v1, :cond_0
+
+    check-cast v0, LY1/d;
+
+    iput-object v0, p1, LE2/f;->u:Ljava/lang/Object;
+
+    return-void
+
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "setExtras should only be called for an Activity that extends ComponentActivity"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    return-void
+.end method
+
+.method public final onCreate(Landroid/os/Bundle;)V
+    .locals 17
+
+    move-object/from16 v2, p0
+
+    invoke-virtual/range {p0 .. p1}, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->o(Landroid/os/Bundle;)V
+
+    sget v0, Lc/n;->a:I
+
+    sget-object v0, Lc/C;->u:Lc/C;
+
+    new-instance v4, Lc/D;
+
+    const/4 v10, 0x0
+
+    invoke-direct {v4, v10, v10, v0}, Lc/D;-><init>(IILr7/c;)V
+
+    sget v1, Lc/n;->a:I
+
+    sget v3, Lc/n;->b:I
+
+    new-instance v5, Lc/D;
+
+    invoke-direct {v5, v1, v3, v0}, Lc/D;-><init>(IILr7/c;)V
+
+    const-string v1, "window"
+
+    invoke-virtual {v2}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v7
+
+    const-string v3, "window.decorView"
+
+    invoke-static {v7, v3}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v7}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const-string v6, "view.resources"
+
+    invoke-static {v3, v6}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v0, v3}, Lr7/c;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v8
+
+    invoke-virtual {v7}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-static {v3, v6}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v0, v3}, Lr7/c;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v9
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x1e
+
+    if-lt v0, v3, :cond_0
+
+    new-instance v0, Lc/r;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    :goto_0
+    move-object v3, v0
+
+    goto :goto_1
+
+    :cond_0
+    const/16 v3, 0x1d
+
+    if-lt v0, v3, :cond_1
+
+    new-instance v0, Lc/q;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v3, 0x1c
+
+    if-lt v0, v3, :cond_2
+
+    new-instance v0, Lc/p;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    goto :goto_0
+
+    :cond_2
+    new-instance v0, Lc/o;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    goto :goto_0
+
+    :goto_1
+    invoke-virtual {v2}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v6
+
+    invoke-static {v6, v1}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual/range {v3 .. v9}, Lc/o;->b(Lc/D;Lc/D;Landroid/view/Window;Landroid/view/View;ZZ)V
+
+    invoke-virtual {v2}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-static {v0, v1}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Lc/o;->a(Landroid/view/Window;)V
+
+    invoke-static {v2}, Landroidx/lifecycle/U;->f(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;)Landroidx/lifecycle/r;
+
+    move-result-object v0
+
+    new-instance v1, Lr6/e;
+
+    const/4 v7, 0x0
+
+    invoke-direct {v1, v2, v7}, Lr6/e;-><init>(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;Lh7/c;)V
+
+    const/4 v3, 0x3
+
+    invoke-static {v0, v7, v7, v1, v3}, LD7/y;->x(LD7/v;Lh7/h;LD7/w;Lr7/e;I)LD7/B;
+
+    invoke-static {v2}, Landroidx/lifecycle/U;->f(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;)Landroidx/lifecycle/r;
+
+    move-result-object v0
+
+    new-instance v1, Lr6/f;
+
+    invoke-direct {v1, v2, v7}, Lr6/f;-><init>(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;Lh7/c;)V
+
+    invoke-static {v0, v7, v7, v1, v3}, LD7/y;->x(LD7/v;Lh7/h;LD7/w;Lr7/e;I)LD7/B;
+
+    invoke-virtual {v2}, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->n()LO6/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, LO6/a;->f()Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    iget-object v0, v2, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->U:Ln6/e;
+
+    if-eqz v0, :cond_3
+
+    new-instance v1, Lc1/h;
+
+    const/16 v3, 0xa
+
+    invoke-direct {v1, v3, v2}, Lc1/h;-><init>(ILjava/lang/Object;)V
+
+    invoke-static {v2}, Lcom/google/android/gms/internal/consent_sdk/b;->d(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;)Lcom/google/android/gms/internal/consent_sdk/b;
+
+    move-result-object v3
+
+    iget-object v3, v3, Lcom/google/android/gms/internal/consent_sdk/b;->h:Ljava/lang/Object;
+
+    check-cast v3, Lcom/google/android/gms/internal/consent_sdk/Z2;
+
+    invoke-virtual {v3}, Lcom/google/android/gms/internal/consent_sdk/Z2;->d()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/gms/internal/consent_sdk/X0;
+
+    new-instance v4, LS1/e;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v4, v5}, LS1/e;-><init>(I)V
+
+    move-object v6, v4
+
+    new-instance v4, Ln6/c;
+
+    invoke-direct {v4, v2, v3, v0, v1}, Ln6/c;-><init>(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;Lcom/google/android/gms/internal/consent_sdk/X0;Ln6/e;Lc1/h;)V
+
+    new-instance v8, LG2/p;
+
+    const/4 v9, 0x7
+
+    invoke-direct {v8, v3, v0, v1, v9}, LG2/p;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    iget-object v1, v3, Lcom/google/android/gms/internal/consent_sdk/X0;->c:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iput-boolean v5, v3, Lcom/google/android/gms/internal/consent_sdk/X0;->e:Z
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    iget-object v0, v3, Lcom/google/android/gms/internal/consent_sdk/X0;->d:Lcom/google/android/gms/internal/consent_sdk/z;
+
+    iget-object v0, v0, Lcom/google/android/gms/internal/consent_sdk/z;->f:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Queue;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v11
+
+    invoke-static {v11, v12}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
+
+    iget-object v1, v3, Lcom/google/android/gms/internal/consent_sdk/X0;->b:Lcom/google/android/gms/internal/consent_sdk/b;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance v0, LL4/s0;
+
+    move-object v3, v6
+
+    const/4 v6, 0x7
+
+    move-object v5, v8
+
+    invoke-direct/range {v0 .. v6}, LL4/s0;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    iget-object v1, v1, Lcom/google/android/gms/internal/consent_sdk/b;->c:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/concurrent/Executor;
+
+    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+
+    :cond_3
+    const-string v0, "consentManager"
+
+    invoke-static {v0}, Ls7/j;->k(Ljava/lang/String;)V
+
+    throw v7
+
+    :cond_4
+    :goto_2
+    invoke-static {v2}, LE4/H4;->d(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    sget-boolean v0, Lcom/markOne/ss_app/app/service/ScreenshotWatcherForegroundService;->L:Z
+
+    sget-boolean v0, Lcom/markOne/ss_app/app/service/ScreenshotWatcherForegroundService;->L:Z
+
+    if-nez v0, :cond_6
+
+    sget-boolean v0, Lcom/markOne/ss_app/app/service/ScreenshotWatcherForegroundService;->L:Z
+
+    if-eqz v0, :cond_5
+
+    goto :goto_3
+
+    :cond_5
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/markOne/ss_app/app/service/ScreenshotWatcherForegroundService;
+
+    invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v2, v0}, Landroid/content/Context;->startForegroundService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    :cond_6
+    :goto_3
+    invoke-static {v2}, LE4/H4;->h(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    new-instance v0, LG2/z;
+
+    const-class v1, Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    invoke-direct {v0, v1}, LG2/K;-><init>(Ljava/lang/Class;)V
+
+    invoke-virtual {v0}, LG2/K;->b()LG2/L;
+
+    move-result-object v0
+
+    check-cast v0, LG2/A;
+
+    invoke-static {v2}, LH2/s;->f(Landroid/content/Context;)LH2/s;
+
+    move-result-object v12
+
+    const-string v13, "screenshot_index_worker"
+
+    invoke-static {v0}, LF4/Z6;->c(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v15
+
+    new-instance v11, LH2/p;
+
+    const/16 v16, 0x0
+
+    const/4 v14, 0x2
+
+    invoke-direct/range {v11 .. v16}, LH2/p;-><init>(LH2/s;Ljava/lang/String;ILjava/util/List;I)V
+
+    invoke-virtual {v11}, LH2/p;->a()LG2/y;
+
+    :cond_7
+    invoke-virtual {v2}, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->n()LO6/a;
+
+    move-result-object v0
+
+    iget-object v0, v0, LO6/a;->a:LT6/b;
+
+    const-string v1, "message"
+
+    const-string v3, "sharedPreference"
+
+    invoke-static {v0, v3}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v3, LT6/a;->K:LT6/a;
+
+    const-string v4, "system"
+
+    invoke-virtual {v0, v3, v4}, LT6/b;->c(LT6/a;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_8
+
+    goto :goto_4
+
+    :cond_8
+    move-object v4, v0
+
+    :goto_4
+    sget-object v0, LS6/c;->w:LS6/b;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {v4}, LS6/b;->r(Ljava/lang/String;)LS6/c;
+
+    move-result-object v0
+
+    sget-object v3, LS6/c;->x:LS6/c;
+
+    if-eq v0, v3, :cond_9
+
+    iget-object v3, v0, LS6/c;->v:Lr7/a;
+
+    invoke-interface {v3}, Lr7/a;->a()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Locale;
+
+    invoke-static {v3}, Ljava/util/Locale;->setDefault(Ljava/util/Locale;)V
+
+    new-instance v4, Landroid/os/LocaleList;
+
+    filled-new-array {v3}, [Ljava/util/Locale;
+
+    move-result-object v5
+
+    invoke-direct {v4, v5}, Landroid/os/LocaleList;-><init>([Ljava/util/Locale;)V
+
+    invoke-static {v4}, Landroid/os/LocaleList;->setDefault(Landroid/os/LocaleList;)V
+
+    new-instance v5, Landroid/content/res/Configuration;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v6
+
+    invoke-direct {v5, v6}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
+
+    invoke-virtual {v5, v3}, Landroid/content/res/Configuration;->setLocale(Ljava/util/Locale;)V
+
+    invoke-virtual {v5, v4}, Landroid/content/res/Configuration;->setLocales(Landroid/os/LocaleList;)V
+
+    invoke-virtual {v5, v3}, Landroid/content/res/Configuration;->setLayoutDirection(Ljava/util/Locale;)V
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v5, v4}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
+
+    iget-object v0, v0, LS6/c;->u:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "applyLanguageToActivity: Applied "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " to Activity resources"
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v1}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_5
+
+    :cond_9
+    invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Configuration;->getLocales()Landroid/os/LocaleList;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v10}, Landroid/os/LocaleList;->get(I)Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/Locale;->getDisplayLanguage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v4
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    const-string v6, "applyLanguageToActivity: Resetting to system default "
+
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, " ("
+
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, ")"
+
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3, v1}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Ljava/util/Locale;->setDefault(Ljava/util/Locale;)V
+
+    new-instance v1, Landroid/os/LocaleList;
+
+    filled-new-array {v0}, [Ljava/util/Locale;
+
+    move-result-object v3
+
+    invoke-direct {v1, v3}, Landroid/os/LocaleList;-><init>([Ljava/util/Locale;)V
+
+    invoke-static {v1}, Landroid/os/LocaleList;->setDefault(Landroid/os/LocaleList;)V
+
+    new-instance v1, Landroid/content/res/Configuration;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v3
+
+    invoke-direct {v1, v3}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
+
+    invoke-virtual {v1, v0}, Landroid/content/res/Configuration;->setLocale(Ljava/util/Locale;)V
+
+    new-instance v3, Landroid/os/LocaleList;
+
+    filled-new-array {v0}, [Ljava/util/Locale;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Landroid/os/LocaleList;-><init>([Ljava/util/Locale;)V
+
+    invoke-virtual {v1, v3}, Landroid/content/res/Configuration;->setLocales(Landroid/os/LocaleList;)V
+
+    invoke-virtual {v1, v0}, Landroid/content/res/Configuration;->setLayoutDirection(Ljava/util/Locale;)V
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
+
+    :goto_5
+    sget-object v0, Lr6/c;->b:Li0/d;
+
+    sget-object v1, Ld/d;->a:Landroid/view/ViewGroup$LayoutParams;
+
+    invoke-virtual {v2}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v1
+
+    const v3, 0x1020002
+
+    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-virtual {v1, v10}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v1
+
+    instance-of v3, v1, LM0/q0;
+
+    if-eqz v3, :cond_a
+
+    check-cast v1, LM0/q0;
+
+    goto :goto_6
+
+    :cond_a
+    move-object v1, v7
+
+    :goto_6
+    if-eqz v1, :cond_b
+
+    invoke-virtual {v1, v7}, LM0/b;->setParentCompositionContext(La0/u;)V
+
+    invoke-virtual {v1, v0}, LM0/q0;->setContent(Lr7/e;)V
+
+    return-void
+
+    :cond_b
+    new-instance v1, LM0/q0;
+
+    invoke-direct {v1, v2}, LM0/q0;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v1, v7}, LM0/b;->setParentCompositionContext(La0/u;)V
+
+    invoke-virtual {v1, v0}, LM0/q0;->setContent(Lr7/e;)V
+
+    invoke-virtual {v2}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroidx/lifecycle/U;->d(Landroid/view/View;)Landroidx/lifecycle/w;
+
+    move-result-object v3
+
+    if-nez v3, :cond_c
+
+    invoke-static {v0, v2}, Landroidx/lifecycle/U;->i(Landroid/view/View;Landroidx/lifecycle/w;)V
+
+    :cond_c
+    invoke-static {v0}, Landroidx/lifecycle/U;->e(Landroid/view/View;)Landroidx/lifecycle/g0;
+
+    move-result-object v3
+
+    if-nez v3, :cond_d
+
+    const v3, 0x7f090161
+
+    invoke-virtual {v0, v3, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    :cond_d
+    invoke-static {v0}, LH4/k5;->a(Landroid/view/View;)Ls2/e;
+
+    move-result-object v3
+
+    if-nez v3, :cond_e
+
+    const v3, 0x7f090160
+
+    invoke-virtual {v0, v3, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    :cond_e
+    sget-object v0, Ld/d;->a:Landroid/view/ViewGroup$LayoutParams;
+
+    invoke-virtual {v2, v1, v0}, Lc/l;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    return-void
+.end method
+
+.method public final onDestroy()V
+    .locals 3
+
+    invoke-virtual {p0}, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->p()V
+
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->R:Lo6/j;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    iget-object v2, v0, Lo6/j;->e:Lw3/a;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v2}, Lw3/a;->b()V
+
+    :cond_0
+    iput-object v1, v0, Lo6/j;->e:Lw3/a;
+
+    const/4 v2, 0x0
+
+    iput-boolean v2, v0, Lo6/j;->g:Z
+
+    iget-object v0, v0, Lo6/j;->b:LI7/d;
+
+    invoke-static {v0, v1}, LD7/y;->g(LD7/v;Ljava/util/concurrent/CancellationException;)V
+
+    sput-object v1, LE4/N3;->a:LL6/t;
+
+    return-void
+
+    :cond_1
+    const-string v0, "billingRepository"
+
+    invoke-static {v0}, Ls7/j;->k(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final onResume()V
+    .locals 1
+
+    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+
+    :try_start_0
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->T:Ln6/k;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p0}, Ln6/k;->a(Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;)V
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "inAppReviewHelper"
+
+    invoke-static {v0}, Ls7/j;->k(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    return-void
+.end method
+
+.method public final p()V
+    .locals 2
+
+    invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+
+    iget-object v0, p0, Lcom/markOne/ss_app/app/ui/activities/MainComposeActivity;->N:LE2/f;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x0
+
+    iput-object v1, v0, LE2/f;->u:Ljava/lang/Object;
+
+    :cond_0
+    return-void
+.end method

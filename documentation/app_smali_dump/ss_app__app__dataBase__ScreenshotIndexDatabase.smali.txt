@@ -1,0 +1,21 @@
+PATH: D:\App Data\Cline\recovery\xapk-extracted\apktool-out\smali\com\markOne\ss_app\app\dataBase\ScreenshotIndexDatabase.smali
+SIZE: 324 LINES: 18
+
+.class public abstract Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+.super Lm2/t;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lm2/t;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract u()Lj6/d;
+.end method

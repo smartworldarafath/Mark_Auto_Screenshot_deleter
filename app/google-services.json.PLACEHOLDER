@@ -1,0 +1,19 @@
+{
+  "comment": "PLACEHOLDER — google-services.json is NOT recoverable from the XAPK. Restore the original file from the Firebase console (project playstore-apps-8ca79) before building. Recovered identifiers (from res/values/strings.xml) that this file must contain:",
+  "project_info": {
+    "project_id": "playstore-apps-8ca79",
+    "project_number": "832322979395",
+    "firebase_url": "https://playstore-apps-8ca79-default-rtdb.firebaseio.com",
+    "storage_bucket": "playstore-apps-8ca79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832322979395:android:d4126a54dfb4b11a91f6f6",
+        "android_client_info": { "package_name": "com.markOne.ss_app" }
+      },
+      "api_key": [{ "current_key": "REPLACE_WITH_ORIGINAL_API_KEY" }],
+      "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
+    }
+  ]
+}

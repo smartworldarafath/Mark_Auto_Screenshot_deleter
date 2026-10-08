@@ -1,0 +1,276 @@
+Mark	Mark
+abc_action_bar_up_description	Navigate up
+abc_menu_alt_shortcut_label	Alt+
+abc_menu_ctrl_shortcut_label	Ctrl+
+abc_menu_delete_shortcut_label	delete
+abc_menu_enter_shortcut_label	enter
+abc_menu_function_shortcut_label	Function+
+abc_menu_meta_shortcut_label	Meta+
+abc_menu_shift_shortcut_label	Shift+
+abc_menu_space_shortcut_label	space
+abc_menu_sym_shortcut_label	Sym+
+abc_prepend_shortcut_label	Menu+
+addition_features_message_for_premium	Below listed features are premium-only and not covered by refill.
+additional_features	Additional Features
+additional_features_description	More ways to enhance your experience.
+all_screenshot	All Screenshots
+all_screenshots_empty	No screenshots found on this device.
+all_screenshots_scheduled_badge	Scheduled for deletion
+all_screenshots_topbar_description	Tap and hold a screenshot to select multiple, then set delete timers, cancel existing timers, or share them together.
+allow	Allow
+androidx_startup	androidx.startup
+app_name	Mark
+app_version	App Version %1$s
+arabic	Arabic
+auto_start	Auto-Start
+autofill	Autofill
+bengali	Bengali
+bottom_nav_all_screenshots	Screenshots
+bottom_nav_home	Home
+bottom_nav_search	Search
+bulk_add_update_timer	Set Delete Timer
+bulk_cancel_timer	Cancel Delete Timer
+bulk_share	Share
+buy_premium	Buy Premium
+call_notification_answer_action	Answer
+call_notification_answer_video_action	Video
+call_notification_decline_action	Decline
+call_notification_hang_up_action	Hang Up
+call_notification_incoming_text	Incoming call
+call_notification_ongoing_text	Ongoing call
+call_notification_screening_text	Screening an incoming call
+cancel_timer	Cancel Timer
+chinese	Chinese (Traditional)
+chinese_simplified	Chinese (Simplified)
+click_here_to_update	Click here to update
+close	Close
+close_drawer	Close navigation menu
+close_sheet	Close sheet
+collapse_day_group	Collapse
+com.google.firebase.crashlytics.mapping_file_id	5aefa36a29384b61b03e37bb04097db9
+com.google.firebase.crashlytics.version_control_info	"repositories {
+  system: GIT
+  local_root_path: \"$PROJECT_DIR\"
+  revision: \"4a95ecf974c14fa0162af1748aa5fc37993a90f7\"
+}
+"
+common_google_play_services_enable_button	Enable
+common_google_play_services_enable_text	"%1$s won't work unless you enable Google Play services."
+common_google_play_services_enable_title	Enable Google Play services
+common_google_play_services_install_button	Install
+common_google_play_services_install_text	"%1$s won't run without Google Play services, which are missing from your device."
+common_google_play_services_install_title	Get Google Play services
+common_google_play_services_notification_channel_name	Google Play services availability
+common_google_play_services_notification_ticker	Google Play services error
+common_google_play_services_unknown_issue	%1$s is having trouble with Google Play services. Please try again.
+common_google_play_services_unsupported_text	"%1$s won't run without Google Play services, which are not supported by your device."
+common_google_play_services_update_button	Update
+common_google_play_services_update_text	"%1$s won't run unless you update Google Play services."
+common_google_play_services_update_title	Update Google Play services
+common_google_play_services_updating_text	"%1$s won't run without Google Play services, which are currently updating."
+common_google_play_services_wear_update_text	New version of Google Play services needed. It will update itself shortly.
+common_open_on_phone	Open on phone
+common_signin_button_text	Sign in
+common_signin_button_text_long	Sign in with Google
+contact_developer	"Have a query?
+Drop a mail to the Developer."
+day_group_today	Today
+day_group_yesterday	Yesterday
+days_left	Days Left
+days_left_short	"Days
+Left"
+default_error_message	Invalid input
+default_popup_window_title	Pop-Up Window
+default_web_client_id	832322979395-1r8lc443lqpvli59qppb3b4j7jvlc3g2.apps.googleusercontent.com
+delete_now	Delete now
+disclaimer	Disclaimer
+disclaimer_description	This app does not collect or store your screenshots. Required permissions are only used for core features like screenshot detection, overlay controls, and auto-deletion. Trusted third-party services used for ads, analytics, and crash reporting may collect limited device and diagnostic data.
+display_overlay_permission	Overlay Permission
+dropdown_menu	Dropdown menu
+dutch	Dutch
+easter_egg_game_final_score	You shredded %1$d screenshots!
+easter_egg_game_instructions	Tap the screenshots before they escape the shredder!
+easter_egg_game_play_again	Play Again
+easter_egg_game_rank_legend	Shredding Legend — are you even human?
+easter_egg_game_rank_master	Shred Master — impressive!
+easter_egg_game_rank_rookie	Rookie Shredder — keep practicing!
+easter_egg_game_rank_saver	Storage Saver — nice reflexes!
+easter_egg_game_score	Score: %1$d
+easter_egg_game_start	Start
+easter_egg_game_time_left	%1$d s
+easter_egg_game_title	Shred Frenzy
+enable_service	Enable Service
+english	English
+enter	Enter
+expand_day_group	Expand
+extra_time_chips	Extra Time Chips
+extra_time_chips_description	This premium feature provides two extra time chips, allowing more flexibility in scheduling screenshot deletion.
+fallback_menu_item_copy_link	Copy link
+fallback_menu_item_open_in_browser	Open in browser
+fallback_menu_item_share_link	Share link
+firebase_database_url	https://playstore-apps-8ca79-default-rtdb.firebaseio.com
+french	French
+gcm_defaultSenderId	832322979395
+german	German
+google_api_key	AIzaSyDMeCDKBFH5E5s33Jxjmud4BD4carK9LDk
+google_app_id	1:832322979395:android:d4126a54dfb4b11a91f6f6
+google_crash_reporting_api_key	AIzaSyDMeCDKBFH5E5s33Jxjmud4BD4carK9LDk
+google_storage_bucket	playstore-apps-8ca79.firebasestorage.app
+grant	Grant
+have_premium_description	Premium active: longer durations, extra time chips, and more — all unlocked, no refills ever needed.
+hindi	Hindi
+ignore_battery_optimization_permission	Battery Optimization (No Restriction)
+image_deleted_manually	This screenshot was deleted manually
+in_progress	In progress
+indeterminate	Partially checked
+indonesian	Indonesian
+info_screenshots_deleted	 screenshots deleted so far, freeing up 
+info_storage_suffix	 of storage.
+invalid_time	Without Refill or Premium, you can only select values within the range:
+italian	Italian
+japanese	Japanese
+keep	Keep
+korean	Korean
+language_settings	Language Settings
+language_settings_description	Select app language
+m3c_bottom_sheet_collapse_description	Collapse bottom sheet
+m3c_bottom_sheet_dismiss_description	Dismiss bottom sheet
+m3c_bottom_sheet_drag_handle_description	Drag handle
+m3c_bottom_sheet_expand_description	Expand bottom sheet
+m3c_bottom_sheet_pane_title	Bottom Sheet
+mark_service	Mark Service
+mark_service_description	Keep this enabled to allow Mark to function properly. If disabled, screenshot delete prompts will no longer appear.
+mark_service_disabled_message	The Mark service is currently disabled. Please enable it to allow screenshot detection and deletion prompts.
+mark_service_disabled_title	Mark Service is Disabled
+mc2_snackbar_pane_title	Alert
+more_apps	More Apps
+more_apps_description	Discover other applications published by this developer.
+native_body	Body
+native_headline	Headline
+native_media_view	Media View
+navigation_menu	Navigation menu
+no_data_list	You haven’t scheduled any screenshots yet.
+no_dialog_description	If enabled, every screenshot you take will be automatically deleted after the set time. No confirmation dialog will appear. However, you can cancel the scheduled deletion for any screenshot before it’s permanently deleted.
+no_dialog_title	Silent auto-delete mode
+not_selected	Not selected
+notification_access_permission	Notification Access
+notification_channel_permission_error	Mark - Permission Error
+notification_channel_permission_error_description	"Mark can't access screenshots due to missing permissions."
+notification_channel_screenshot_watcher	Mark
+notification_channel_screenshot_watcher_description	Foreground service for monitoring screenshots
+notification_channel_service_relaunch	Mark - Background Service Stopped
+notification_channel_service_relaunch_description	Foreground service has stopped unexpectedly. Tap to restart it again.
+notifications_permission_confirm	Allow
+notifications_permission_decline	"Don't allow"
+notifications_permission_title	Allow app to send you notifications?
+offline_dialog_image_description	Icon
+offline_dialog_text	"Thanks for your interest.
+We will share more once you're back online."
+offline_notification_title	"You are back online! Let's pick up where we left off"
+offline_notification_title_with_advertiser	You are back online! Continue learning about %s
+offline_opt_in_confirm	OK
+offline_opt_in_decline	No thanks
+offline_opt_in_message	"We'll send you a notification with a link to the advertiser site."
+offline_opt_in_title	"Open ad when you're back online."
+open_permission_dialog	Open Permission Dialog
+permission_denial_message	Permission needed to use the app.
+permission_description	These permissions are mandatory for the app to function. Without them, the app will not work.
+permission_title	Permissions
+persian	Persian
+polish	Polish
+portuguese	Portuguese
+premium_description	Enjoy unlimited Premium features like extended durations, flexible time units, and extra time chips — without ever refilling.
+premium_ended_message	Your premium access has ended. Refill now or buy one time premium to continue enjoying premium features.
+project_id	playstore-apps-8ca79
+range_end	Range end
+range_start	Range start
+refill	Refill
+refill_description	Access premium features like durations over 45 minutes or under 15 minutes, hour/day time units, and two extra time chips by making a one-time purchase or refilling through an ad. Refill extends your premium access by 20 days, up to a maximum of 40 days at any given time.
+remove_ads	Remove Ads
+remove_ads_description	Remove all ads from the app (ads may still appear during refill).
+russian	Russian
+s1	Save image
+s2	Allow Ad to store image in Picture gallery?
+s3	Accept
+s4	Decline
+s5	Create calendar event
+s6	Allow Ad to create a calendar event?
+s7	Test Ad
+save_changes	Save Changes
+schedule_time	Schedule Time
+schedule_time_description	Choose how long after the screenshot should be deleted. Enter a number and select the time unit—minutes, hours, or days.
+scheduled_item_text1	This screenshot will be permanently deleted in 
+scheduled_item_text2	Timer set on: 
+scheduled_screenshots	Scheduled Screenshots
+scheduled_screenshots_description	You have %1$d screenshots queued for automatic deletion.
+screenshot_delete_time	Screenshot Deletion Time
+screenshot_deletion_schedule_description	Configure when a screenshot should be deleted after being marked. Time can be set in minutes, hours, or days.
+screenshot_details_capture_date	Capture date
+screenshot_details_delete_in	Deletes in
+screenshot_details_dimensions	Dimensions
+screenshot_details_file_name	File name
+screenshot_details_file_size	File size
+screenshot_details_folder	Folder
+screenshot_details_info_icon	Screenshot details
+screenshot_details_no_timer	No delete timer set
+screenshot_details_scheduled_deletion	Scheduled deletion
+screenshot_details_timer_duration	Timer duration
+screenshot_details_timer_set_on	Timer set on
+screenshot_details_title	Details
+screenshot_read_permission	Read Screenshot (Allow All)
+search_hint	Search your screenshots
+search_indexing_in_progress	Indexing your screenshots…
+search_menu_title	Search
+search_no_results	No screenshots found for \"%1$s\".
+search_prompt	Search for anything in your screenshots — text, objects, and more.
+select	Select
+select_delete_timer_description	Keep the Best, Shred the Rest
+select_delete_timer_text	Set When This Screenshot Deletes Automatically
+select_delete_timer_text_multiple	Set When These Screenshots Delete Automatically
+select_screenshot_folder	Select Screenshot Folder
+selected	Selected
+selected_folder	Selected Folder: %1$s
+selected_screenshot_folder_path	Selected Screenshot Folder Path
+share_and_delete_after_x	Share &amp; Delete after %1$s
+share_and_keep	Share &amp; Keep
+share_delete_card_description	You can update when the screenshot should be deleted after sharing.
+share_delete_card_title	Share &amp; Delete
+spanish	Spanish
+specify_time	Specify Time Value
+state_empty	Empty
+state_off	Off
+state_on	On
+status_bar_notification_info_overflow	999+
+switch_role	Switch
+system_default	System Default
+tab	Tab
+tamil	Tamil
+template_percent	%1$d percent.
+thai	Thai
+time_format_and	and
+time_format_few_seconds	few seconds
+time_unit_day	day
+time_unit_days	Days
+time_unit_days_plural	days
+time_unit_hour	hour
+time_unit_hours	Hours
+time_unit_hours_plural	hours
+time_unit_minute	minute
+time_unit_minutes	Minutes
+time_unit_minutes_plural	minutes
+toast_done	Done: ✅
+toast_network_error	Network error. Please check your internet connection.
+toast_no_internet	No internet connection
+toast_rate_limit	Too many requests. Please try again after 1 minute.
+toast_screenshot_will_be_deleted	[Mark ⏳] This screenshot will be deleted in %1$s.
+tooltip_description	tooltip
+tooltip_label	show tooltip
+turkish	Turkish
+tutorial_text	Watch App Walkthrough
+ukrainian	Ukrainian
+update	Update
+update_timer	Update Timer
+updated	Update
+urdu	Urdu
+vietnamese	Vietnamese
+watermark_label_prefix	"AdMob - "

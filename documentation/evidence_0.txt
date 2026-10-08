@@ -1,0 +1,90 @@
+group 0 scanned files: 4858
+====================================================================================================
+entity_ann 2
+  com\markOne\ss_app\app\dataBase\MarkDatabase_Impl.smali  || scheduled_screenshot_entity
+  com\markOne\ss_app\app\dataBase\ScreenshotIndexDatabase_Impl.smali  || screenshot_index_entity
+====================================================================================================
+room_ann 0
+====================================================================================================
+compose_entry 0
+====================================================================================================
+notify 3
+  com\google\android\gms\internal\ads\Zn.smali
+  com\google\android\gms\internal\ads\ha.3.smali
+  com\markOne\ss_app\app\service\ScreenshotWatcherForegroundService.smali
+====================================================================================================
+prefs 0
+====================================================================================================
+billing 1
+  com\google\android\gms\internal\consent_sdk\h.1.smali
+====================================================================================================
+ads_call 18
+  com\facebook\ads\Ad.smali
+  com\facebook\ads\AdError.smali
+  com\facebook\ads\AdView.smali
+  com\facebook\ads\InterstitialAd.smali
+  com\facebook\ads\NativeAdBase.smali
+  com\facebook\ads\RewardedInterstitialAd.smali
+  com\facebook\ads\RewardedVideoAd.smali
+  com\facebook\ads\internal\api\AdViewApi.smali
+  com\facebook\ads\internal\api\InterstitialAdApi.smali
+  com\facebook\ads\internal\api\NativeAdBaseApi.smali
+  com\facebook\ads\internal\api\RewardedInterstitialAdApi.smali
+  com\facebook\ads\internal\api\RewardedVideoAdApi.smali
+  com\facebook\ads\internal\dynamicloading\DynamicLoaderFallback.smali
+  com\google\ads\mediation\facebook\FacebookRewardedAd.smali
+  com\google\ads\mediation\facebook\rtb\FacebookRtbBannerAd.smali
+  com\google\ads\mediation\facebook\rtb\FacebookRtbInterstitialAd.smali
+  com\google\ads\mediation\facebook\rtb\FacebookRtbNativeAd.smali
+  com\google\android\gms\ads\MobileAds.smali
+====================================================================================================
+ocr 0
+====================================================================================================
+overlay 19
+  com\facebook\ads\MediaViewVideoRenderer.smali
+  com\facebook\ads\internal\api\AdComponentFrameLayout$1.smali
+  com\facebook\ads\internal\api\AdComponentFrameLayout.smali
+  com\facebook\ads\internal\api\AdComponentView.smali
+  com\facebook\ads\internal\api\AdNativeComponentView$1.smali
+  com\facebook\ads\internal\api\AdNativeComponentView.smali
+  com\google\ads\mediation\facebook\rtb\FacebookRtbBannerAd.smali
+  com\google\android\gms\ads\nativead\NativeAdView.smali
+  com\google\android\gms\internal\ads\Af.1.smali
+  com\google\android\gms\internal\ads\Kk.1.smali
+  com\google\android\gms\internal\ads\Tl.1.smali
+  com\google\android\gms\internal\ads\UA.smali
+  com\google\android\gms\internal\ads\cc.3.smali
+  com\google\android\gms\internal\ads\cn.1.smali
+  com\google\android\gms\internal\ads\qf.3.smali
+  com\google\android\gms\internal\ads\ql.3.smali
+  com\google\android\gms\internal\ads\ve.3.smali
+  com\google\android\gms\internal\ads\yh.3.smali
+  com\google\android\gms\internal\ads\yp.1.smali
+====================================================================================================
+workmgr 0
+====================================================================================================
+media_obs 7
+  com\google\android\gms\internal\ads\Yt.smali
+  com\google\android\gms\internal\ads\fu.1.smali
+  com\google\android\gms\internal\measurement\F1.smali
+  com\google\android\gms\internal\measurement\I1.smali
+  com\google\android\gms\internal\measurement\t.1.smali
+  com\markOne\ss_app\app\service\DeleteScreenshotWorkManager.smali
+  com\markOne\ss_app\app\service\ScreenshotWatcherForegroundService.smali
+====================================================================================================
+consent 5
+  com\google\android\gms\internal\consent_sdk\K1.smali
+  com\google\android\gms\internal\consent_sdk\g.1.smali
+  com\google\android\gms\internal\consent_sdk\i.1.smali
+  com\google\android\gms\internal\consent_sdk\m0.1.smali
+  com\google\android\gms\internal\consent_sdk\z.1.smali
+====================================================================================================
+review 0
+====================================================================================================
+fgs 4
+  com\markOne\ss_app\app\service\BootCompletedReceiver.smali
+  com\markOne\ss_app\app\service\DeleteScreenshotWorkManager.smali
+  com\markOne\ss_app\app\service\dailyServiceChecker\DailyPeriodicWorkScheduler.smali
+  com\markOne\ss_app\app\ui\activities\MainComposeActivity.smali
+====================================================================================================
+license 0

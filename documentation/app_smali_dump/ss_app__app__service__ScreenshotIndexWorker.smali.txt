@@ -1,0 +1,769 @@
+PATH: D:\App Data\Cline\recovery\xapk-extracted\apktool-out\smali\com\markOne\ss_app\app\service\ScreenshotIndexWorker.smali
+SIZE: 16494 LINES: 766
+
+.class public final Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+.super Landroidx/work/CoroutineWorker;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+    .locals 1
+
+    const-string v0, "appContext"
+
+    invoke-static {p1, v0}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "params"
+
+    invoke-static {p2, v0}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0, p1, p2}, Landroidx/work/CoroutineWorker;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lh7/c;)Ljava/lang/Object;
+    .locals 25
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v0, p1
+
+    const-string v2, "getApplicationContext(...)"
+
+    instance-of v3, v0, Ln6/l;
+
+    if-eqz v3, :cond_0
+
+    move-object v3, v0
+
+    check-cast v3, Ln6/l;
+
+    iget v4, v3, Ln6/l;->H:I
+
+    const/high16 v5, -0x80000000
+
+    and-int v6, v4, v5
+
+    if-eqz v6, :cond_0
+
+    sub-int/2addr v4, v5
+
+    iput v4, v3, Ln6/l;->H:I
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v3, Ln6/l;
+
+    check-cast v0, Lj7/c;
+
+    invoke-direct {v3, v1, v0}, Ln6/l;-><init>(Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;Lj7/c;)V
+
+    :goto_0
+    iget-object v0, v3, Ln6/l;->F:Ljava/lang/Object;
+
+    iget v4, v3, Ln6/l;->H:I
+
+    sget-object v5, Li7/a;->t:Li7/a;
+
+    const-string v6, "message"
+
+    sget-object v7, Ld7/z;->a:Ld7/z;
+
+    const/4 v9, 0x4
+
+    const/4 v10, 0x3
+
+    const/4 v11, 0x2
+
+    const/4 v13, 0x1
+
+    if-eqz v4, :cond_6
+
+    if-eq v4, v13, :cond_5
+
+    if-eq v4, v11, :cond_4
+
+    if-eq v4, v10, :cond_3
+
+    if-ne v4, v9, :cond_2
+
+    iget v2, v3, Ln6/l;->E:I
+
+    iget v4, v3, Ln6/l;->D:I
+
+    iget-object v14, v3, Ln6/l;->C:Ljava/util/Iterator;
+
+    iget-object v15, v3, Ln6/l;->B:Ljava/util/List;
+
+    iget-object v9, v3, Ln6/l;->A:Ljava/util/Set;
+
+    check-cast v9, Ljava/util/Set;
+
+    iget-object v10, v3, Ln6/l;->z:LC3/l;
+
+    iget-object v8, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iget-object v12, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iget-object v13, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    :try_start_0
+    invoke-static {v0}, Ld7/a;->e(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/4 v11, 0x4
+
+    const/16 v17, 0x1
+
+    :cond_1
+    move-object v0, v10
+
+    move-object v10, v8
+
+    move-object v8, v9
+
+    move-object v9, v0
+
+    move-object v0, v15
+
+    goto/16 :goto_a
+
+    :catchall_0
+    move-exception v0
+
+    goto/16 :goto_e
+
+    :cond_2
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_3
+    iget v2, v3, Ln6/l;->E:I
+
+    iget v4, v3, Ln6/l;->D:I
+
+    iget-object v8, v3, Ln6/l;->C:Ljava/util/Iterator;
+
+    iget-object v9, v3, Ln6/l;->B:Ljava/util/List;
+
+    iget-object v10, v3, Ln6/l;->A:Ljava/util/Set;
+
+    check-cast v10, Ljava/util/Set;
+
+    iget-object v12, v3, Ln6/l;->z:LC3/l;
+
+    iget-object v13, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iget-object v14, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iget-object v15, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    :try_start_1
+    invoke-static {v0}, Ld7/a;->e(Ljava/lang/Object;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    move-object/from16 v17, v14
+
+    move-object v14, v8
+
+    move-object v8, v13
+
+    move-object v13, v15
+
+    move-object v15, v9
+
+    move-object v9, v10
+
+    move-object v10, v12
+
+    move-object/from16 v12, v17
+
+    :goto_1
+    const/16 v17, 0x1
+
+    goto/16 :goto_7
+
+    :catchall_1
+    move-exception v0
+
+    move-object v12, v14
+
+    goto/16 :goto_e
+
+    :cond_4
+    iget v2, v3, Ln6/l;->E:I
+
+    iget v4, v3, Ln6/l;->D:I
+
+    iget-object v8, v3, Ln6/l;->A:Ljava/util/Set;
+
+    check-cast v8, Ljava/util/Set;
+
+    iget-object v9, v3, Ln6/l;->z:LC3/l;
+
+    iget-object v10, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iget-object v12, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iget-object v13, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    :try_start_2
+    invoke-static {v0}, Ld7/a;->e(Ljava/lang/Object;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    const/4 v11, 0x0
+
+    goto/16 :goto_4
+
+    :cond_5
+    iget-object v2, v3, Ln6/l;->z:LC3/l;
+
+    iget-object v4, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iget-object v12, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iget-object v8, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    :try_start_3
+    invoke-static {v0}, Ld7/a;->e(Ljava/lang/Object;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    goto :goto_2
+
+    :cond_6
+    invoke-static {v0}, Ld7/a;->e(Ljava/lang/Object;)V
+
+    :try_start_4
+    invoke-virtual {v1}, LG2/w;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0, v2}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-class v4, Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    const-string v8, "screenshot_index_database"
+
+    invoke-static {v0, v4, v8}, LH4/f0;->a(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/String;)Lm2/r;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lm2/r;->b()Lm2/t;
+
+    move-result-object v0
+
+    move-object v12, v0
+
+    check-cast v12, Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
+
+    :try_start_5
+    new-instance v4, Lcom/google/android/gms/internal/ads/Dd;
+
+    invoke-virtual {v1}, LG2/w;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0, v2}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v12}, Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;->u()Lj6/d;
+
+    move-result-object v8
+
+    invoke-direct {v4, v0, v8}, Lcom/google/android/gms/internal/ads/Dd;-><init>(Landroid/content/Context;Lj6/d;)V
+
+    new-instance v0, LC3/l;
+
+    invoke-virtual {v1}, LG2/w;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v8
+
+    invoke-static {v8, v2}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v8, v11}, LC3/l;-><init>(Landroid/content/Context;I)V
+
+    iput-object v1, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    iput-object v12, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iput-object v4, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iput-object v0, v3, Ln6/l;->z:LC3/l;
+
+    const/4 v2, 0x1
+
+    iput v2, v3, Ln6/l;->H:I
+
+    sget-object v2, LD7/I;->a:LK7/e;
+
+    sget-object v2, LK7/d;->v:LK7/d;
+
+    new-instance v8, Lm6/e;
+
+    const/4 v9, 0x0
+
+    invoke-direct {v8, v4, v9}, Lm6/e;-><init>(Lcom/google/android/gms/internal/ads/Dd;Lh7/c;)V
+
+    invoke-static {v2, v8, v3}, LD7/y;->G(Lh7/h;Lr7/e;Lh7/c;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-ne v2, v5, :cond_7
+
+    goto/16 :goto_9
+
+    :cond_7
+    move-object v8, v2
+
+    move-object v2, v0
+
+    move-object v0, v8
+
+    move-object v8, v1
+
+    :goto_2
+    check-cast v0, Ljava/util/Set;
+
+    const/4 v9, 0x0
+
+    move-object v10, v4
+
+    move-object v13, v8
+
+    move v4, v9
+
+    move-object v8, v0
+
+    move-object v9, v2
+
+    move v2, v4
+
+    :goto_3
+    iput-object v13, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    iput-object v12, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iput-object v10, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iput-object v9, v3, Ln6/l;->z:LC3/l;
+
+    move-object v0, v8
+
+    check-cast v0, Ljava/util/Set;
+
+    iput-object v0, v3, Ln6/l;->A:Ljava/util/Set;
+
+    const/4 v0, 0x0
+
+    iput-object v0, v3, Ln6/l;->B:Ljava/util/List;
+
+    iput-object v0, v3, Ln6/l;->C:Ljava/util/Iterator;
+
+    iput v4, v3, Ln6/l;->D:I
+
+    iput v2, v3, Ln6/l;->E:I
+
+    iput v11, v3, Ln6/l;->H:I
+
+    invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    sget-object v0, LD7/I;->a:LK7/e;
+
+    sget-object v0, LK7/d;->v:LK7/d;
+
+    new-instance v14, Lm6/k;
+
+    const/4 v11, 0x0
+
+    const/16 v15, 0x64
+
+    invoke-direct {v14, v9, v4, v15, v11}, Lm6/k;-><init>(LC3/l;IILh7/c;)V
+
+    invoke-static {v0, v14, v3}, LD7/y;->G(Lh7/h;Lr7/e;Lh7/c;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v0, v5, :cond_8
+
+    goto/16 :goto_9
+
+    :cond_8
+    :goto_4
+    check-cast v0, Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v14
+
+    if-nez v14, :cond_f
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v14
+
+    add-int/2addr v4, v14
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v14
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    :goto_5
+    :try_start_6
+    invoke-interface {v14}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v15
+
+    if-eqz v15, :cond_d
+
+    invoke-interface {v14}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v15
+
+    check-cast v15, Lm6/h;
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_4
+
+    move-object/from16 v24, v12
+
+    :try_start_7
+    iget-wide v11, v15, Lm6/h;->a:J
+
+    new-instance v1, Ljava/lang/Long;
+
+    invoke-direct {v1, v11, v12}, Ljava/lang/Long;-><init>(J)V
+
+    invoke-interface {v8, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_c
+
+    iget-wide v11, v15, Lm6/h;->a:J
+
+    iget-object v1, v15, Lm6/h;->b:Landroid/net/Uri;
+
+    iput-object v13, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+
+    move-object/from16 v15, v24
+
+    :try_start_8
+    iput-object v15, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iput-object v10, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iput-object v9, v3, Ln6/l;->z:LC3/l;
+
+    move-object/from16 v20, v1
+
+    move-object v1, v8
+
+    check-cast v1, Ljava/util/Set;
+
+    iput-object v1, v3, Ln6/l;->A:Ljava/util/Set;
+
+    iput-object v0, v3, Ln6/l;->B:Ljava/util/List;
+
+    iput-object v14, v3, Ln6/l;->C:Ljava/util/Iterator;
+
+    iput v4, v3, Ln6/l;->D:I
+
+    iput v2, v3, Ln6/l;->E:I
+
+    const/4 v1, 0x3
+
+    iput v1, v3, Ln6/l;->H:I
+
+    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    sget-object v16, LD7/I;->a:LK7/e;
+
+    sget-object v1, LK7/d;->v:LK7/d;
+
+    new-instance v18, Lm6/f;
+
+    const/16 v23, 0x0
+
+    move-object/from16 v19, v10
+
+    move-wide/from16 v21, v11
+
+    invoke-direct/range {v18 .. v23}, Lm6/f;-><init>(Lcom/google/android/gms/internal/ads/Dd;Landroid/net/Uri;JLh7/c;)V
+
+    move-object/from16 v10, v18
+
+    invoke-static {v1, v10, v3}, LD7/y;->G(Lh7/h;Lr7/e;Lh7/c;)Ljava/lang/Object;
+
+    move-result-object v1
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+
+    if-ne v1, v5, :cond_9
+
+    goto :goto_6
+
+    :cond_9
+    move-object v1, v7
+
+    :goto_6
+    if-ne v1, v5, :cond_a
+
+    goto :goto_9
+
+    :cond_a
+    move-object v10, v9
+
+    move-object v12, v15
+
+    move-object v15, v0
+
+    move-object v9, v8
+
+    move-object/from16 v8, v19
+
+    goto/16 :goto_1
+
+    :goto_7
+    add-int/lit8 v2, v2, 0x1
+
+    :try_start_9
+    new-instance v0, Ljava/util/LinkedHashMap;
+
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+
+    const-string v1, "progress"
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    invoke-interface {v0, v1, v11}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v1, LG2/j;
+
+    invoke-direct {v1, v0}, LG2/j;-><init>(Ljava/util/LinkedHashMap;)V
+
+    invoke-static {v1}, LE4/V2;->b(LG2/j;)[B
+
+    iput-object v13, v3, Ln6/l;->w:Lcom/markOne/ss_app/app/service/ScreenshotIndexWorker;
+
+    iput-object v12, v3, Ln6/l;->x:Lcom/markOne/ss_app/app/dataBase/ScreenshotIndexDatabase;
+
+    iput-object v8, v3, Ln6/l;->y:Lcom/google/android/gms/internal/ads/Dd;
+
+    iput-object v10, v3, Ln6/l;->z:LC3/l;
+
+    move-object v0, v9
+
+    check-cast v0, Ljava/util/Set;
+
+    iput-object v0, v3, Ln6/l;->A:Ljava/util/Set;
+
+    iput-object v15, v3, Ln6/l;->B:Ljava/util/List;
+
+    iput-object v14, v3, Ln6/l;->C:Ljava/util/Iterator;
+
+    iput v4, v3, Ln6/l;->D:I
+
+    iput v2, v3, Ln6/l;->E:I
+
+    const/4 v11, 0x4
+
+    iput v11, v3, Ln6/l;->H:I
+
+    invoke-virtual {v13, v1}, LG2/w;->setProgressAsync(LG2/j;)LX4/b;
+
+    move-result-object v0
+
+    const-string v1, "setProgressAsync(data)"
+
+    invoke-static {v0, v1}, Ls7/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0, v3}, LH4/x0;->a(LX4/b;Lj7/c;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
+
+    if-ne v0, v5, :cond_b
+
+    goto :goto_8
+
+    :cond_b
+    move-object v0, v7
+
+    :goto_8
+    if-ne v0, v5, :cond_1
+
+    :goto_9
+    return-object v5
+
+    :goto_a
+    move-object/from16 v1, p0
+
+    :goto_b
+    const/4 v11, 0x0
+
+    goto/16 :goto_5
+
+    :goto_c
+    move-object v12, v15
+
+    goto :goto_e
+
+    :catchall_2
+    move-exception v0
+
+    goto :goto_c
+
+    :catchall_3
+    move-exception v0
+
+    move-object/from16 v15, v24
+
+    goto :goto_c
+
+    :cond_c
+    move-object/from16 v19, v10
+
+    move-object/from16 v15, v24
+
+    const/16 v17, 0x1
+
+    move-object/from16 v1, p0
+
+    move-object v12, v15
+
+    goto :goto_b
+
+    :catchall_4
+    move-exception v0
+
+    move-object v15, v12
+
+    goto :goto_e
+
+    :cond_d
+    move-object/from16 v19, v10
+
+    move-object v15, v12
+
+    const/4 v11, 0x4
+
+    const/16 v17, 0x1
+
+    :try_start_a
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_2
+
+    const/16 v1, 0x64
+
+    if-ge v0, v1, :cond_e
+
+    move-object v12, v15
+
+    goto :goto_d
+
+    :cond_e
+    move-object/from16 v1, p0
+
+    move-object v12, v15
+
+    move-object/from16 v10, v19
+
+    const/4 v11, 0x2
+
+    goto/16 :goto_3
+
+    :cond_f
+    :goto_d
+    :try_start_b
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "ScreenshotIndexWorker: indexed "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, " new screenshot(s)"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v6}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, LG2/u;
+
+    invoke-direct {v0}, LG2/u;-><init>()V
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_0
+
+    :try_start_c
+    invoke-virtual {v12}, Lm2/t;->d()V
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_f
+
+    :goto_e
+    invoke-virtual {v12}, Lm2/t;->d()V
+
+    throw v0
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_0
+
+    :goto_f
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "ScreenshotIndexWorker: failed - "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v6}, Ls7/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, LG2/s;
+
+    invoke-direct {v0}, LG2/s;-><init>()V
+
+    return-object v0
+.end method
